@@ -1,7 +1,7 @@
 <h1>hola soy el ejs <%= usuario.nombre%>
 </h1>
-
-
+<%- include('partials/header') %>
+<h2>Lista de usuarios</h2>
 <% usuario.forEach(element=> { %>
     <p>
         <%= element.nombre %>

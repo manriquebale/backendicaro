@@ -1,1 +1,9 @@
-<h1>hola</h1>
+<h1>hola soy el ejs <%= usuario.nombre%>
+</h1>
+
+
+<% usuario.forEach(element=> { %>
+    <p>
+        <%= element.nombre %>
+    </p>
+    <% }); %>
